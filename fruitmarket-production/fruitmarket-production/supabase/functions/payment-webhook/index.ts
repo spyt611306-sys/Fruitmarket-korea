@@ -1,0 +1,1 @@
+import{json,preflight,constantTimeEqual}from"../_shared/http.ts";Deno.serve((req)=>{const p=preflight(req);if(p)return p;const a=Deno.env.get("TOSS_WEBHOOK_SECRET")||"",b=req.headers.get("x-webhook-secret")||"";if(!a||!constantTimeEqual(a,b))return json({code:"WEBHOOK_UNAUTHORIZED"},401);return json({accepted:true});});

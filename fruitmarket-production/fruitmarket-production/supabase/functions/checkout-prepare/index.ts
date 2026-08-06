@@ -1,0 +1,1 @@
+import{json,preflight}from"../_shared/http.ts";Deno.serve((req)=>{const p=preflight(req);if(p)return p;if(Deno.env.get("FRUITMARKET_PAYMENTS_ENABLED")!=="true")return json({code:"PAYMENTS_DISABLED"},503);return json({code:"CHECKOUT_PROVIDER_NOT_ACTIVATED"},503);});

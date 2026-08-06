@@ -1,0 +1,11 @@
+import { access, readFile, readdir } from "node:fs/promises";
+import path from "node:path";
+const required = ["package.json","netlify.toml","site/index.html","supabase/config.toml","supabase/functions/health/index.ts","supabase/functions/api/index.ts","supabase/sql/24_ADMIN_BOOTSTRAP_TRIGGER_SAFE_PDG04036.sql","supabase/sql/25_AFTER_ADMIN_BOOTSTRAP_CHECKS.sql"];
+for (const file of required) await access(path.resolve(file));
+const html = await readFile("site/index.html", "utf8");
+if (!html.includes("푸릇마켓")) throw new Error("푸릇마켓 HTML 누락");
+if (/(test|live)_sk_[A-Za-z0-9_-]+/.test(html)) throw new Error("공개 HTML에 결제 Secret 노출");
+const functions=(await readdir("supabase/functions",{withFileTypes:true})).filter(x=>x.isDirectory()&&!x.name.startsWith("_")).map(x=>x.name).sort();
+const expected=["api","checkout-prepare","health","payment-cancel","payment-confirm","payment-webhook","payout-run","scheduled-jobs"].sort();
+if(JSON.stringify(functions)!==JSON.stringify(expected)) throw new Error(`Edge Functions 불일치: ${functions}`);
+console.log("fruitmarket-production checks passed");

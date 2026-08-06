@@ -1,0 +1,17 @@
+project_id = "fruitmarket-production"
+[functions.health]
+verify_jwt = false
+[functions.api]
+verify_jwt = true
+[functions.checkout-prepare]
+verify_jwt = true
+[functions.payment-confirm]
+verify_jwt = true
+[functions.payment-cancel]
+verify_jwt = true
+[functions.payment-webhook]
+verify_jwt = false
+[functions.payout-run]
+verify_jwt = false
+[functions.scheduled-jobs]
+verify_jwt = false
