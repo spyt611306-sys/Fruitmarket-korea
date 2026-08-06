@@ -1,6 +1,0 @@
-[build]
-  command = "node scripts/build-frontend.mjs"
-  publish = "frontend/dist"
-
-[build.environment]
-  NODE_VERSION = "20"

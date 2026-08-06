@@ -1,1 +1,0 @@
-window.MATCHSIK_CONFIG={"apiBaseUrl":"https://dimgmidsepwnhfmwxkds.supabase.co/functions/v1/api","supabasePublishableKey":"sb_publishable_JYUOeooQ7W2au3D7GezJnQ_cUQ704Lj","customerCenterEmail":"pdg04036@naver.com","build":"v28.3-complete-supabase-ready"};
