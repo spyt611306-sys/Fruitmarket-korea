@@ -1,0 +1,1 @@
+(function(){"use strict";const q=new URLSearchParams(location.search);document.getElementById("message").textContent=q.get("message")||"결제가 취소되었거나 승인되지 않았습니다.";document.getElementById("code").textContent=q.get("code")?`오류코드: ${q.get("code")}`:"다시 결제하기 전에 주문 상태를 확인해 주세요.";history.replaceState({},document.title,"./payment-fail.html")})();
