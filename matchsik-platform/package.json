@@ -1,0 +1,12 @@
+{
+  "name": "matchsik-platform",
+  "private": true,
+  "version": "28.3.0",
+  "scripts": {
+    "build": "node scripts/build-frontend.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

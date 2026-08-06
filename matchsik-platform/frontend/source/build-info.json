@@ -1,0 +1,14 @@
+{
+  "build": "v28.3-complete-supabase-ready",
+  "date": "2026-08-06",
+  "included": [
+    "complete-netlify-root",
+    "supabase-config",
+    "application-workflow",
+    "student-portal",
+    "admin-portal",
+    "teacher-portal",
+    "v28-teacher-catalog",
+    "professional-home-images"
+  ]
+}

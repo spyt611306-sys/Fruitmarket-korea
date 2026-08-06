@@ -1,0 +1,130 @@
+/* 맞춤식 과외 v28.1 — 반응형·강사 포털·캘린더 보완 */
+:root{
+  --m28-ink:#102f2c;--m28-brand:#235c54;--m28-brand-2:#39786e;
+  --m28-mint:#edf5f1;--m28-cream:#fbfaf6;--m28-line:#d9e2de;
+  --m28-muted:#667b76;--m28-danger:#c84438;--m28-shadow:0 22px 64px rgba(15,48,44,.18)
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:hidden;-webkit-text-size-adjust:100%}
+body{min-width:0;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%}
+button,input,select,textarea{font:inherit;max-width:100%}
+[hidden]{display:none!important}
+
+/* 기존 페이지에서 위아래로 찌그러지는 요소 공통 교정 */
+.header,.topbar,.page-header,.app-header,.brand,.header-inner{min-height:0;height:auto}
+.panel,.card,.modal-card,.choice-card,.teacher-card,.field,.control-wrap{min-width:0}
+.control,input.control,select.control,textarea.control{
+  width:100%;min-height:48px;height:auto;padding:12px 14px;border:1px solid var(--m28-line);
+  border-radius:13px;background:#fff;color:var(--m28-ink);line-height:1.35
+}
+textarea.control{min-height:112px;resize:vertical}
+.btn,button.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;height:auto;line-height:1.25;white-space:normal}
+
+/* 강사 로그인 모달 */
+.m28-teacher-login-backdrop{
+  position:fixed;inset:0;z-index:100000;display:grid;place-items:center;padding:24px;
+  background:linear-gradient(145deg,rgba(7,34,48,.92),rgba(19,66,67,.88));
+  backdrop-filter:blur(10px)
+}
+.m28-teacher-login-dialog{
+  position:relative;width:min(520px,100%);max-height:min(820px,calc(100dvh - 32px));overflow:auto;
+  padding:34px;border:1px solid rgba(255,255,255,.52);border-radius:28px;background:var(--m28-cream);
+  box-shadow:0 36px 110px rgba(3,26,31,.42)
+}
+.m28-teacher-login-close{
+  position:absolute;top:16px;right:16px;width:44px;height:44px;border:0;border-radius:14px;
+  background:#eef3ef;color:var(--m28-ink);font-size:24px;cursor:pointer
+}
+.m28-teacher-login-mark{
+  width:58px;height:58px;display:grid;place-items:center;border-radius:18px;background:var(--m28-brand);
+  color:#fff;font-size:22px;font-weight:900;box-shadow:0 14px 30px rgba(35,92,84,.2)
+}
+.m28-teacher-login-eyebrow{margin:24px 0 8px;color:var(--m28-brand-2);font-size:12px;font-weight:900;letter-spacing:.18em}
+.m28-teacher-login-dialog h2{margin:0;color:var(--m28-ink);font-size:clamp(29px,5vw,40px);line-height:1.12;letter-spacing:-.045em}
+.m28-teacher-login-description{margin:18px 0 26px;color:var(--m28-muted);font-size:15px;line-height:1.75}
+.m28-login-field{display:grid;gap:8px;margin-top:16px}
+.m28-login-field label{color:var(--m28-ink);font-size:14px;font-weight:800}
+.m28-login-input-wrap{position:relative}
+.m28-login-input{
+  width:100%;height:56px;padding:0 15px;border:1px solid #cbd7d2;border-radius:15px;background:#fff;
+  color:var(--m28-ink);font-size:16px;outline:0;transition:.18s ease
+}
+.m28-login-input:focus{border-color:var(--m28-brand-2);box-shadow:0 0 0 4px rgba(57,120,110,.14)}
+.m28-login-input.has-toggle{padding-right:72px}
+.m28-password-toggle{
+  position:absolute;right:8px;top:8px;height:40px;min-width:54px;border:0;border-radius:11px;
+  background:var(--m28-mint);color:var(--m28-brand);font-size:13px;font-weight:800;cursor:pointer
+}
+.m28-teacher-login-submit{
+  width:100%;min-height:56px;margin-top:24px;border:0;border-radius:16px;background:linear-gradient(135deg,var(--m28-brand),var(--m28-brand-2));
+  color:#fff;font-size:17px;font-weight:900;cursor:pointer;box-shadow:0 15px 30px rgba(35,92,84,.22)
+}
+.m28-teacher-login-submit:disabled{cursor:wait;opacity:.65}
+.m28-login-error,.m28-login-notice{margin-top:16px;padding:13px 14px;border-radius:13px;font-size:13px;line-height:1.55}
+.m28-login-error{border:1px solid #ffc6bf;background:#fff1ef;color:#b9342a}
+.m28-login-notice{border:1px solid var(--m28-line);background:#f2f3ed;color:var(--m28-muted)}
+
+/* 강사 및 관리자 수업 자격증 선택 */
+.m28-catalog-toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:16px 0}
+.m28-catalog-search{flex:1 1 220px;min-height:44px;padding:0 13px;border:1px solid var(--m28-line);border-radius:12px;background:#fff}
+.m28-assignment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.m28-assignment-card{min-width:0;padding:15px;border:1px solid var(--m28-line);border-radius:16px;background:#fff}
+.m28-assignment-card-head{display:flex;align-items:start;justify-content:space-between;gap:8px}
+.m28-assignment-card h4{margin:0;font-size:15px;color:var(--m28-ink);letter-spacing:-.025em}
+.m28-assignment-card small{display:block;margin-top:4px;color:var(--m28-muted)}
+.m28-course-options{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.m28-course-option{display:inline-flex;align-items:center;gap:6px;padding:8px 10px;border:1px solid var(--m28-line);border-radius:999px;background:#f8faf8;font-size:13px;cursor:pointer}
+.m28-course-option input{width:17px;height:17px;margin:0;accent-color:var(--m28-brand)}
+.m28-course-option.disabled{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.m28-official-badge,.m28-estimated-badge,.m28-written-only-badge{display:inline-flex;align-items:center;padding:5px 8px;border-radius:999px;font-size:11px;font-weight:850}
+.m28-official-badge{background:#e7f5ee;color:#176044}.m28-estimated-badge{background:#fff1d8;color:#885b07}.m28-written-only-badge{background:#eaf1fb;color:#315f96}
+
+/* v28 관리자 강사 편집 오버레이 */
+.m28-admin-launch{position:fixed;right:20px;bottom:20px;z-index:9000;min-height:48px;padding:0 17px;border:0;border-radius:15px;background:var(--m28-brand);color:#fff;font-weight:900;box-shadow:var(--m28-shadow);cursor:pointer}
+.m28-admin-overlay{position:fixed;inset:0;z-index:9500;padding:20px;background:rgba(8,32,35,.74);backdrop-filter:blur(7px);overflow:auto}
+.m28-admin-panel{width:min(1180px,100%);margin:auto;padding:24px;border-radius:24px;background:#f7f7f3;box-shadow:var(--m28-shadow)}
+.m28-admin-panel-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.m28-admin-panel-head h2{margin:0;color:var(--m28-ink)}
+.m28-admin-close{width:44px;height:44px;border:0;border-radius:13px;background:#e9efeb;color:var(--m28-ink);font-size:23px;cursor:pointer}
+.m28-teacher-list{display:grid;grid-template-columns:280px minmax(0,1fr);gap:18px}
+.m28-teacher-nav{display:grid;gap:8px;align-content:start}
+.m28-teacher-nav button{padding:13px;border:1px solid var(--m28-line);border-radius:13px;background:#fff;text-align:left;cursor:pointer}
+.m28-teacher-nav button.active{border-color:var(--m28-brand);background:var(--m28-mint);color:var(--m28-brand);font-weight:900}
+.m28-editor{min-width:0;padding:18px;border:1px solid var(--m28-line);border-radius:18px;background:#fff}
+.m28-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.m28-form-grid .full{grid-column:1/-1}
+.m28-save-bar{position:sticky;bottom:0;display:flex;justify-content:flex-end;gap:10px;margin:20px -18px -18px;padding:14px 18px;border-top:1px solid var(--m28-line);background:rgba(255,255,255,.96);backdrop-filter:blur(8px)}
+
+/* 월간 캘린더: 모바일에서도 7열 전체 표시 */
+.m28-month-calendar,.student-calendar,.class-calendar,.calendar-grid,[data-student-calendar]{
+  width:100%;max-width:100%;min-width:0;overflow:visible!important
+}
+.m28-calendar-weekdays,.m28-calendar-days,.calendar-weekdays,.calendar-days,.class-calendar-grid{
+  display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;width:100%!important;min-width:0!important;gap:4px!important
+}
+.m28-calendar-day,.calendar-day,.class-calendar-day{
+  min-width:0!important;width:auto!important;aspect-ratio:1/1;min-height:46px!important;padding:5px!important;border-radius:9px!important;overflow:hidden
+}
+.m28-calendar-day-number,.calendar-day-number{font-size:12px;font-weight:800}
+.m28-calendar-event,.calendar-event{display:block;max-width:100%;padding:2px 3px;border-radius:5px;font-size:9px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+@media(max-width:780px){
+  .m28-teacher-login-backdrop{padding:10px;align-items:end}
+  .m28-teacher-login-dialog{width:100%;max-height:calc(100dvh - 12px);padding:25px 18px 20px;border-radius:24px 24px 0 0}
+  .m28-teacher-login-dialog h2{font-size:31px}.m28-teacher-login-description{margin:13px 0 18px;font-size:14px}
+  .m28-login-input{height:52px}.m28-teacher-login-submit{min-height:52px}
+  .m28-assignment-grid{grid-template-columns:1fr}
+  .m28-admin-overlay{padding:0}.m28-admin-panel{min-height:100dvh;border-radius:0;padding:14px}
+  .m28-teacher-list{grid-template-columns:1fr}.m28-teacher-nav{grid-template-columns:repeat(3,minmax(0,1fr));overflow:auto}.m28-teacher-nav button{min-width:130px}
+  .m28-form-grid{grid-template-columns:1fr}.m28-form-grid .full{grid-column:auto}
+  .m28-admin-launch{right:12px;bottom:12px;min-height:44px;font-size:13px}
+  .m28-calendar-weekdays,.m28-calendar-days,.calendar-weekdays,.calendar-days,.class-calendar-grid{gap:2px!important}
+  .m28-calendar-day,.calendar-day,.class-calendar-day{min-height:42px!important;padding:3px!important;border-radius:7px!important}
+  .m28-calendar-day-number,.calendar-day-number{font-size:10px}.m28-calendar-event,.calendar-event{font-size:7px;padding:1px}
+  .calendar-shell,.class-calendar-shell,.student-calendar-shell{overflow-x:hidden!important;padding-left:0!important;padding-right:0!important}
+}
+@media(max-width:390px){
+  .m28-calendar-day,.calendar-day,.class-calendar-day{min-height:38px!important}
+  .m28-calendar-event,.calendar-event{font-size:0}.m28-calendar-event::before,.calendar-event::before{content:'•';font-size:10px;color:var(--m28-brand)}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

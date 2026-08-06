@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko" data-matchsik-build="v28.3-complete-supabase-ready">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#173b38">
+  <title>강사 운영 포털 | 맞춤식 과외</title>
+  <link rel="icon" href="/icons/matchsik-app-icon.svg">
+  <link rel="stylesheet" href="/assets/v28-1.css?v=28.3">
+  <style>
+    :root{font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif;color:#102f2c;background:#f4f4ef}
+    body{margin:0;background:linear-gradient(180deg,#f8f7f2,#edf2ef);min-height:100dvh}
+    .t28-header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px max(18px,calc((100vw - 1280px)/2));border-bottom:1px solid #dce4df;background:rgba(251,250,246,.94);backdrop-filter:blur(12px)}
+    .t28-brand{display:flex;align-items:center;gap:12px;color:#102f2c;text-decoration:none}.t28-brand-mark{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:#235c54;color:#fff;font-weight:950}.t28-brand b{display:block;font-size:17px}.t28-brand small{display:block;margin-top:3px;color:#6c7d78;font-size:10px;letter-spacing:.12em}
+    .t28-head-actions{display:flex;align-items:center;gap:8px}.t28-head-actions button,.t28-head-actions a{min-height:42px;padding:0 13px;border:1px solid #d8e1dd;border-radius:12px;background:#fff;color:#163d38;text-decoration:none;font-weight:800;cursor:pointer}
+    .t28-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:22px;width:min(1320px,calc(100% - 32px));margin:24px auto 70px}
+    .t28-sidebar{position:sticky;top:90px;height:max-content;padding:14px;border:1px solid #dbe3df;border-radius:20px;background:#fff;box-shadow:0 14px 36px rgba(20,51,47,.07)}
+    .t28-profile-mini{padding:13px;margin-bottom:10px;border-radius:15px;background:#eef5f1}.t28-profile-mini b{display:block}.t28-profile-mini span{display:block;margin-top:5px;color:#677a75;font-size:12px}
+    .t28-nav{display:grid;gap:6px}.t28-nav button{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:0 12px;border:0;border-radius:12px;background:transparent;color:#536b66;text-align:left;font-weight:800;cursor:pointer}.t28-nav button.active{background:#235c54;color:#fff}
+    .t28-main{min-width:0}.t28-state{min-height:64vh;display:grid;place-items:center}.t28-state-card{width:min(540px,100%);padding:30px;border:1px solid #dce4df;border-radius:23px;background:#fff;text-align:center;box-shadow:0 20px 56px rgba(15,48,44,.1)}.t28-state-card h1{margin:8px 0 12px;font-size:30px}.t28-state-card p{color:#687c77;line-height:1.7}.t28-state-card button{min-height:48px;padding:0 18px;border:0;border-radius:13px;background:#235c54;color:#fff;font-weight:900;cursor:pointer}
+    .t28-page-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:18px}.t28-page-head h1{margin:0;font-size:clamp(28px,4vw,42px);letter-spacing:-.05em}.t28-page-head p{margin:8px 0 0;color:#667b76}.t28-status-pill{padding:8px 11px;border-radius:999px;background:#e8f4ee;color:#176044;font-size:12px;font-weight:900}
+    .t28-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.t28-stat{padding:17px;border:1px solid #dbe3df;border-radius:17px;background:#fff}.t28-stat span{color:#70817d;font-size:12px}.t28-stat b{display:block;margin-top:9px;font-size:23px}
+    .t28-card{min-width:0;margin-top:16px;padding:20px;border:1px solid #dbe3df;border-radius:20px;background:#fff;box-shadow:0 14px 36px rgba(20,51,47,.055)}.t28-card h2{margin:0 0 5px;font-size:20px}.t28-card-sub{margin:0 0 16px;color:#70817d;font-size:13px;line-height:1.6}
+    .t28-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.t28-field{display:grid;gap:7px;min-width:0}.t28-field.full{grid-column:1/-1}.t28-field label{font-size:13px;font-weight:850}.t28-field input,.t28-field select,.t28-field textarea{width:100%;padding:12px 13px;border:1px solid #d4dfda;border-radius:12px;background:#fff;color:#102f2c}.t28-field textarea{min-height:110px;resize:vertical}
+    .t28-save{min-height:48px;padding:0 18px;border:0;border-radius:13px;background:#235c54;color:#fff;font-weight:900;cursor:pointer}.t28-save:disabled{opacity:.55;cursor:wait}.t28-danger{background:#fff1ef!important;color:#b9342a!important;border:1px solid #ffc9c2!important}
+    .t28-row-list{display:grid;gap:9px}.t28-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:13px;border:1px solid #e0e6e2;border-radius:13px;background:#fbfcfa}.t28-row b{display:block}.t28-row small{display:block;margin-top:4px;color:#71827e}.t28-row button{min-height:36px;padding:0 10px;border:1px solid #dce4df;border-radius:10px;background:#fff;cursor:pointer}
+    .t28-calendar-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.t28-calendar-head button{width:42px;height:42px;border:1px solid #dbe3df;border-radius:12px;background:#fff;cursor:pointer}.t28-calendar-weekdays,.t28-calendar-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.t28-calendar-weekdays div{text-align:center;padding:7px;color:#6d817c;font-size:12px;font-weight:850}.t28-calendar-day{position:relative;min-height:104px;padding:8px;border:1px solid #e0e7e3;border-radius:12px;background:#fff;overflow:hidden}.t28-calendar-day.other{opacity:.4}.t28-calendar-day.today{border-color:#39786e;box-shadow:inset 0 0 0 1px #39786e}.t28-calendar-day-number{font-size:12px;font-weight:900}.t28-event{display:block;margin-top:5px;padding:4px 5px;border-radius:6px;background:#e7f4ee;color:#185b49;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.t28-event.held{background:#fff0d6;color:#845a09}.t28-event.approved{background:#daf1e4;color:#155e42}
+    .t28-toast{position:fixed;left:50%;bottom:24px;z-index:100001;transform:translateX(-50%);max-width:min(520px,calc(100% - 24px));padding:13px 17px;border-radius:13px;background:#102f2c;color:#fff;box-shadow:0 18px 45px rgba(10,38,35,.28)}
+    @media(max-width:980px){.t28-layout{grid-template-columns:1fr}.t28-sidebar{position:static;padding:8px;overflow:auto}.t28-nav{display:flex;min-width:max-content}.t28-profile-mini{display:none}.t28-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:680px){.t28-header{padding:10px 12px}.t28-brand small{display:none}.t28-layout{width:calc(100% - 20px);margin-top:12px}.t28-head-actions a{display:none}.t28-main{overflow:hidden}.t28-page-head{align-items:start;flex-direction:column}.t28-grid{grid-template-columns:1fr 1fr;gap:8px}.t28-stat{padding:13px}.t28-stat b{font-size:19px}.t28-card{padding:14px;border-radius:17px}.t28-form-grid{grid-template-columns:1fr}.t28-field.full{grid-column:auto}.t28-calendar-day{min-height:44px;padding:3px;border-radius:7px}.t28-calendar-weekdays,.t28-calendar-days{gap:2px}.t28-calendar-weekdays div{font-size:9px;padding:4px 0}.t28-calendar-day-number{font-size:9px}.t28-event{font-size:0;height:7px;padding:0;margin-top:3px}.t28-event::before{content:'';display:block;width:100%;height:100%;border-radius:999px;background:currentColor}.t28-row{grid-template-columns:1fr}.m28-assignment-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="t28-header">
+  <a class="t28-brand" href="/"><span class="t28-brand-mark">M</span><span><b>맞춤식 과외</b><small>TEACHER OPERATIONS PORTAL</small></span></a>
+  <div class="t28-head-actions"><a href="mailto:pdg04036@naver.com">관리자 문의</a><button type="button" data-logout>로그아웃</button></div>
+</header>
+<div class="t28-layout">
+  <aside class="t28-sidebar" data-sidebar hidden>
+    <div class="t28-profile-mini"><b data-mini-name>강사</b><span data-mini-role>프로필 확인 중</span></div>
+    <nav class="t28-nav">
+      <button class="active" data-tab="dashboard">대시보드</button>
+      <button data-tab="calendar">수업 캘린더</button>
+      <button data-tab="profile">내 프로필</button>
+      <button data-tab="availability">가능시간</button>
+      <button data-tab="closures">휴무</button>
+      <button data-tab="proof">합격률 자료</button>
+      <button data-tab="reviews">후기 제출</button>
+    </nav>
+  </aside>
+  <main class="t28-main">
+    <section class="t28-state" data-state="boot"><article class="t28-state-card"><div class="m28-teacher-login-mark" style="margin:auto">T</div><h1>강사 정보를 확인하고 있습니다.</h1><p>로그인 세션과 연결된 강사 프로필을 안전하게 확인합니다.</p></article></section>
+    <section class="t28-state" data-state="auth" hidden><article class="t28-state-card"><div class="m28-teacher-login-mark" style="margin:auto">T</div><h1>강사 인증이 필요합니다.</h1><p>홈페이지 맨 아래 맞춤식 과외 로고를 4초 안에 7번 눌러 로그인해 주세요.</p><button type="button" data-home>홈으로 이동</button></article></section>
+    <section class="t28-state" data-state="error" hidden><article class="t28-state-card"><h1>강사 정보를 불러오지 못했습니다.</h1><p data-error-message>잠시 후 다시 시도해 주세요.</p><button type="button" data-retry>다시 불러오기</button></article></section>
+    <section data-view hidden></section>
+  </main>
+</div>
+<div class="t28-toast" data-toast hidden></div>
+<script src="/config.js?v=28.3"></script>
+<script src="/assets/teacher-v28-1.js?v=28.3"></script>
+</body>
+</html>

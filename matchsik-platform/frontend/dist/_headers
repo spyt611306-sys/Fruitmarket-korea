@@ -1,0 +1,21 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Cross-Origin-Opener-Policy: same-origin
+  Strict-Transport-Security: max-age=31536000
+/admin.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store
+/teacher.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store
+/my.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store
+/student.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store
+/config.js
+  Cache-Control: no-store

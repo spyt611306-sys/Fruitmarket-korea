@@ -1,0 +1,16 @@
+{
+  "name": "맞춤식 과외",
+  "short_name": "맞춤식",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#174b44",
+  "icons": [
+    {
+      "src": "/icons/matchsik-app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
