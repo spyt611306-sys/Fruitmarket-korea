@@ -1,0 +1,1210 @@
+{
+  "checkedAt": "2026-08-05T23:35:54.665157+00:00",
+  "uiRouteStringCount": 171,
+  "normalizedRouteCount": 144,
+  "coveredCount": 171,
+  "uncovered": [],
+  "missingHandlerTokens": [],
+  "passed": true,
+  "routes": [
+    {
+      "raw": "/api/",
+      "normalized": "/api",
+      "handlers": [
+        "generic-api-root"
+      ]
+    },
+    {
+      "raw": "/api/admin/alerts/realtime",
+      "normalized": "/api/admin/alerts/realtime",
+      "handlers": [
+        "admin-alerts"
+      ]
+    },
+    {
+      "raw": "/api/admin/categories",
+      "normalized": "/api/admin/categories",
+      "handlers": [
+        "admin-categories"
+      ]
+    },
+    {
+      "raw": "/api/admin/categories/${id}",
+      "normalized": "/api/admin/categories/:dynamic",
+      "handlers": [
+        "admin-categories"
+      ]
+    },
+    {
+      "raw": "/api/admin/categories/${id}/active",
+      "normalized": "/api/admin/categories/:dynamic/active",
+      "handlers": [
+        "admin-categories"
+      ]
+    },
+    {
+      "raw": "/api/admin/claims/${id}/${action}",
+      "normalized": "/api/admin/claims/:dynamic/:dynamic",
+      "handlers": [
+        "admin-claims"
+      ]
+    },
+    {
+      "raw": "/api/admin/claims?size=100${status?",
+      "normalized": "/api/admin/claims",
+      "handlers": [
+        "admin-claims"
+      ]
+    },
+    {
+      "raw": "/api/admin/consumers/${id}/activate",
+      "normalized": "/api/admin/consumers/:dynamic/activate",
+      "handlers": [
+        "admin-consumers"
+      ]
+    },
+    {
+      "raw": "/api/admin/consumers/${id}/grade",
+      "normalized": "/api/admin/consumers/:dynamic/grade",
+      "handlers": [
+        "admin-consumers"
+      ]
+    },
+    {
+      "raw": "/api/admin/consumers/${id}/grade/recalculate",
+      "normalized": "/api/admin/consumers/:dynamic/grade/recalculate",
+      "handlers": [
+        "admin-consumers"
+      ]
+    },
+    {
+      "raw": "/api/admin/consumers/${id}/suspend",
+      "normalized": "/api/admin/consumers/:dynamic/suspend",
+      "handlers": [
+        "admin-consumers"
+      ]
+    },
+    {
+      "raw": "/api/admin/consumers?size=100${keyword",
+      "normalized": "/api/admin/consumers",
+      "handlers": [
+        "admin-consumers"
+      ]
+    },
+    {
+      "raw": "/api/admin/home-products",
+      "normalized": "/api/admin/home-products",
+      "handlers": [
+        "admin-home-products"
+      ]
+    },
+    {
+      "raw": "/api/admin/home-products/${id}",
+      "normalized": "/api/admin/home-products/:dynamic",
+      "handlers": [
+        "admin-home-products"
+      ]
+    },
+    {
+      "raw": "/api/admin/inventory-excel-templates",
+      "normalized": "/api/admin/inventory-excel-templates",
+      "handlers": [
+        "admin-templates"
+      ]
+    },
+    {
+      "raw": "/api/admin/inventory-excel-templates/${id}",
+      "normalized": "/api/admin/inventory-excel-templates/:dynamic",
+      "handlers": [
+        "admin-templates"
+      ]
+    },
+    {
+      "raw": "/api/admin/inventory-excel-templates/${id}/activate",
+      "normalized": "/api/admin/inventory-excel-templates/:dynamic/activate",
+      "handlers": [
+        "admin-templates"
+      ]
+    },
+    {
+      "raw": "/api/admin/inventory-excel-templates/${template.id}/download",
+      "normalized": "/api/admin/inventory-excel-templates/:dynamic/download",
+      "handlers": [
+        "admin-templates"
+      ]
+    },
+    {
+      "raw": "/api/admin/operations/normalize",
+      "normalized": "/api/admin/operations/normalize",
+      "handlers": [
+        "admin-operations"
+      ]
+    },
+    {
+      "raw": "/api/admin/operations/readiness",
+      "normalized": "/api/admin/operations/readiness",
+      "handlers": [
+        "admin-operations"
+      ]
+    },
+    {
+      "raw": "/api/admin/operations/unanswered-questions?size=30",
+      "normalized": "/api/admin/operations/unanswered-questions",
+      "handlers": [
+        "admin-operations"
+      ]
+    },
+    {
+      "raw": "/api/admin/orders?size=300&sort=CREATED_DESC",
+      "normalized": "/api/admin/orders",
+      "handlers": [
+        "admin-orders"
+      ]
+    },
+    {
+      "raw": "/api/admin/privacy/mask-expired",
+      "normalized": "/api/admin/privacy/mask-expired",
+      "handlers": [
+        "admin-privacy"
+      ]
+    },
+    {
+      "raw": "/api/admin/products/${id}/status",
+      "normalized": "/api/admin/products/:dynamic/status",
+      "handlers": [
+        "admin-products"
+      ]
+    },
+    {
+      "raw": "/api/admin/products/{id}/commercial-approval",
+      "normalized": "/api/admin/products/:dynamic/commercial-approval",
+      "handlers": [
+        "admin-products"
+      ]
+    },
+    {
+      "raw": "/api/admin/products?size=100${status",
+      "normalized": "/api/admin/products",
+      "handlers": [
+        "admin-products"
+      ]
+    },
+    {
+      "raw": "/api/admin/products?size=500&sort=UPDATED_DESC",
+      "normalized": "/api/admin/products",
+      "handlers": [
+        "admin-products"
+      ]
+    },
+    {
+      "raw": "/api/admin/products?status=ON_SALE&size=100",
+      "normalized": "/api/admin/products",
+      "handlers": [
+        "admin-products"
+      ]
+    },
+    {
+      "raw": "/api/admin/promotions/banners",
+      "normalized": "/api/admin/promotions/banners",
+      "handlers": [
+        "admin-banners"
+      ]
+    },
+    {
+      "raw": "/api/admin/promotions/banners/${bannerId}",
+      "normalized": "/api/admin/promotions/banners/:dynamic",
+      "handlers": [
+        "admin-banners"
+      ]
+    },
+    {
+      "raw": "/api/admin/promotions/banners/${id}",
+      "normalized": "/api/admin/promotions/banners/:dynamic",
+      "handlers": [
+        "admin-banners"
+      ]
+    },
+    {
+      "raw": "/api/admin/promotions/banners/${id}/status",
+      "normalized": "/api/admin/promotions/banners/:dynamic/status",
+      "handlers": [
+        "admin-banners"
+      ]
+    },
+    {
+      "raw": "/api/admin/promotions/banners/${saved.id}/status",
+      "normalized": "/api/admin/promotions/banners/:dynamic/status",
+      "handlers": [
+        "admin-banners"
+      ]
+    },
+    {
+      "raw": "/api/admin/seller-applications/${encodeURIComponent(String(id))}/${action}",
+      "normalized": "/api/admin/seller-applications/:dynamic/:dynamic",
+      "handlers": [
+        "admin-applications"
+      ]
+    },
+    {
+      "raw": "/api/admin/seller-applications/${id}",
+      "normalized": "/api/admin/seller-applications/:dynamic",
+      "handlers": [
+        "admin-applications"
+      ]
+    },
+    {
+      "raw": "/api/admin/seller-applications/${id}/${action}",
+      "normalized": "/api/admin/seller-applications/:dynamic/:dynamic",
+      "handlers": [
+        "admin-applications"
+      ]
+    },
+    {
+      "raw": "/api/admin/seller-applications?size=100${status",
+      "normalized": "/api/admin/seller-applications",
+      "handlers": [
+        "admin-applications"
+      ]
+    },
+    {
+      "raw": "/api/admin/seller-applications?status=PENDING&size=100",
+      "normalized": "/api/admin/seller-applications",
+      "handlers": [
+        "admin-applications"
+      ]
+    },
+    {
+      "raw": "/api/admin/sellers/${encodeURIComponent(String(key))}/status",
+      "normalized": "/api/admin/sellers/:dynamic/status",
+      "handlers": [
+        "admin-sellers"
+      ]
+    },
+    {
+      "raw": "/api/admin/sellers/settlement-accounts",
+      "normalized": "/api/admin/sellers/settlement-accounts",
+      "handlers": [
+        "admin-sellers"
+      ]
+    },
+    {
+      "raw": "/api/admin/sellers?size=200",
+      "normalized": "/api/admin/sellers",
+      "handlers": [
+        "admin-sellers"
+      ]
+    },
+    {
+      "raw": "/api/admin/settlement-policy",
+      "normalized": "/api/admin/settlement-policy",
+      "handlers": [
+        "admin-settlement-policy"
+      ]
+    },
+    {
+      "raw": "/api/admin/settlements/${id}/approve",
+      "normalized": "/api/admin/settlements/:dynamic/approve",
+      "handlers": [
+        "admin-settlements"
+      ]
+    },
+    {
+      "raw": "/api/admin/settlements/${id}/complete",
+      "normalized": "/api/admin/settlements/:dynamic/complete",
+      "handlers": [
+        "admin-settlements"
+      ]
+    },
+    {
+      "raw": "/api/admin/settlements/${id}/hold",
+      "normalized": "/api/admin/settlements/:dynamic/hold",
+      "handlers": [
+        "admin-settlements"
+      ]
+    },
+    {
+      "raw": "/api/admin/settlements/${id}/release-hold",
+      "normalized": "/api/admin/settlements/:dynamic/release-hold",
+      "handlers": [
+        "admin-settlements"
+      ]
+    },
+    {
+      "raw": "/api/admin/settlements/lock-policy",
+      "normalized": "/api/admin/settlements/lock-policy",
+      "handlers": [
+        "admin-settlements"
+      ]
+    },
+    {
+      "raw": "/api/admin/settlements?size=100${status",
+      "normalized": "/api/admin/settlements",
+      "handlers": [
+        "admin-settlements"
+      ]
+    },
+    {
+      "raw": "/api/admin/shipments/${id}/${action}",
+      "normalized": "/api/admin/shipments/:dynamic/:dynamic",
+      "handlers": [
+        "admin-shipments"
+      ]
+    },
+    {
+      "raw": "/api/admin/shipments?size=100${status",
+      "normalized": "/api/admin/shipments",
+      "handlers": [
+        "admin-shipments"
+      ]
+    },
+    {
+      "raw": "/api/admin/statistics?period=MONTH",
+      "normalized": "/api/admin/statistics",
+      "handlers": [
+        "admin-stats"
+      ]
+    },
+    {
+      "raw": "/api/auth/csrf",
+      "normalized": "/api/auth/csrf",
+      "handlers": [
+        "auth"
+      ]
+    },
+    {
+      "raw": "/api/auth/login",
+      "normalized": "/api/auth/login",
+      "handlers": [
+        "auth"
+      ]
+    },
+    {
+      "raw": "/api/auth/logout",
+      "normalized": "/api/auth/logout",
+      "handlers": [
+        "auth"
+      ]
+    },
+    {
+      "raw": "/api/auth/me",
+      "normalized": "/api/auth/me",
+      "handlers": [
+        "auth"
+      ]
+    },
+    {
+      "raw": "/api/cart",
+      "normalized": "/api/cart",
+      "handlers": [
+        "cart"
+      ]
+    },
+    {
+      "raw": "/api/cart/items",
+      "normalized": "/api/cart/items",
+      "handlers": [
+        "cart"
+      ]
+    },
+    {
+      "raw": "/api/cart/items/${cartItemId}",
+      "normalized": "/api/cart/items/:dynamic",
+      "handlers": [
+        "cart"
+      ]
+    },
+    {
+      "raw": "/api/cart/items/${cartItemId}/quantity",
+      "normalized": "/api/cart/items/:dynamic/quantity",
+      "handlers": [
+        "cart"
+      ]
+    },
+    {
+      "raw": "/api/claims",
+      "normalized": "/api/claims",
+      "handlers": [
+        "claims"
+      ]
+    },
+    {
+      "raw": "/api/claims/${id}/return-tracking",
+      "normalized": "/api/claims/:dynamic/return-tracking",
+      "handlers": [
+        "claims"
+      ]
+    },
+    {
+      "raw": "/api/claims/${id}/withdraw",
+      "normalized": "/api/claims/:dynamic/withdraw",
+      "handlers": [
+        "claims"
+      ]
+    },
+    {
+      "raw": "/api/claims/me?size=100",
+      "normalized": "/api/claims/me",
+      "handlers": [
+        "claims"
+      ]
+    },
+    {
+      "raw": "/api/client-errors",
+      "normalized": "/api/client-errors",
+      "handlers": [
+        "client-errors"
+      ]
+    },
+    {
+      "raw": "/api/coupons/mine",
+      "normalized": "/api/coupons/mine",
+      "handlers": [
+        "coupon-mine"
+      ]
+    },
+    {
+      "raw": "/api/favorites/sellers",
+      "normalized": "/api/favorites/sellers",
+      "handlers": [
+        "favorites-seller"
+      ]
+    },
+    {
+      "raw": "/api/favorites/sellers/${sellerId}",
+      "normalized": "/api/favorites/sellers/:dynamic",
+      "handlers": [
+        "favorites-seller"
+      ]
+    },
+    {
+      "raw": "/api/favorites/sellers/${sellerId}/status",
+      "normalized": "/api/favorites/sellers/:dynamic/status",
+      "handlers": [
+        "favorites-seller"
+      ]
+    },
+    {
+      "raw": "/api/favorites/sellers/${state.favoriteSellerId}",
+      "normalized": "/api/favorites/sellers/:dynamic",
+      "handlers": [
+        "favorites-seller"
+      ]
+    },
+    {
+      "raw": "/api/files?usage=",
+      "normalized": "/api/files",
+      "handlers": [
+        "files"
+      ]
+    },
+    {
+      "raw": "/api/form-drafts",
+      "normalized": "/api/form-drafts",
+      "handlers": [
+        "form-drafts"
+      ]
+    },
+    {
+      "raw": "/api/health",
+      "normalized": "/api/health",
+      "handlers": [
+        "health"
+      ]
+    },
+    {
+      "raw": "/api/members/me",
+      "normalized": "/api/members/me",
+      "handlers": [
+        "auth"
+      ]
+    },
+    {
+      "raw": "/api/mypage/addresses",
+      "normalized": "/api/mypage/addresses",
+      "handlers": [
+        "addresses"
+      ]
+    },
+    {
+      "raw": "/api/mypage/addresses/${addressId}",
+      "normalized": "/api/mypage/addresses/:dynamic",
+      "handlers": [
+        "addresses"
+      ]
+    },
+    {
+      "raw": "/api/mypage/addresses/${addressId}/default",
+      "normalized": "/api/mypage/addresses/:dynamic/default",
+      "handlers": [
+        "addresses"
+      ]
+    },
+    {
+      "raw": "/api/mypage/favorites",
+      "normalized": "/api/mypage/favorites",
+      "handlers": [
+        "favorites-product"
+      ]
+    },
+    {
+      "raw": "/api/mypage/favorites/${productId}",
+      "normalized": "/api/mypage/favorites/:dynamic",
+      "handlers": [
+        "favorites-product"
+      ]
+    },
+    {
+      "raw": "/api/mypage/favorites?size=100",
+      "normalized": "/api/mypage/favorites",
+      "handlers": [
+        "favorites-product"
+      ]
+    },
+    {
+      "raw": "/api/mypage/profile",
+      "normalized": "/api/mypage/profile",
+      "handlers": [
+        "profile"
+      ]
+    },
+    {
+      "raw": "/api/mypage/recent-products",
+      "normalized": "/api/mypage/recent-products",
+      "handlers": [
+        "recent"
+      ]
+    },
+    {
+      "raw": "/api/mypage/recent-viewed/${productId}",
+      "normalized": "/api/mypage/recent-viewed/:dynamic",
+      "handlers": [
+        "recent"
+      ]
+    },
+    {
+      "raw": "/api/mypage/recent-viewed?size=100",
+      "normalized": "/api/mypage/recent-viewed",
+      "handlers": [
+        "recent"
+      ]
+    },
+    {
+      "raw": "/api/mypage/reviews",
+      "normalized": "/api/mypage/reviews",
+      "handlers": [
+        "reviews-me"
+      ]
+    },
+    {
+      "raw": "/api/orders/${encodeURIComponent(orderId)}/cancel",
+      "normalized": "/api/orders/:dynamic/cancel",
+      "handlers": [
+        "orders"
+      ]
+    },
+    {
+      "raw": "/api/orders/${encodeURIComponent(orderId)}/confirm",
+      "normalized": "/api/orders/:dynamic/confirm",
+      "handlers": [
+        "orders"
+      ]
+    },
+    {
+      "raw": "/api/orders/${encodeURIComponent(resolvedOrderNumber)}",
+      "normalized": "/api/orders/:dynamic",
+      "handlers": [
+        "orders"
+      ]
+    },
+    {
+      "raw": "/api/orders/checkout/cart",
+      "normalized": "/api/orders/checkout/cart",
+      "handlers": [
+        "checkout"
+      ]
+    },
+    {
+      "raw": "/api/orders/checkout/direct",
+      "normalized": "/api/orders/checkout/direct",
+      "handlers": [
+        "checkout"
+      ]
+    },
+    {
+      "raw": "/api/orders/my?size=100",
+      "normalized": "/api/orders/my",
+      "handlers": [
+        "orders"
+      ]
+    },
+    {
+      "raw": "/api/orders/payments/${id}/fail",
+      "normalized": "/api/orders/payments/:dynamic/fail",
+      "handlers": [
+        "payment-fail"
+      ]
+    },
+    {
+      "raw": "/api/orders/payments/${order.payment.paymentId}/approve",
+      "normalized": "/api/orders/payments/:dynamic/approve",
+      "handlers": [
+        "payment-approve"
+      ]
+    },
+    {
+      "raw": "/api/orders/payments/${paymentId}/approve",
+      "normalized": "/api/orders/payments/:dynamic/approve",
+      "handlers": [
+        "payment-approve"
+      ]
+    },
+    {
+      "raw": "/api/orders?page=0&size=100&sort=orderedAt,desc",
+      "normalized": "/api/orders",
+      "handlers": [
+        "orders"
+      ]
+    },
+    {
+      "raw": "/api/orders?size=100&sort=orderedAt,desc",
+      "normalized": "/api/orders",
+      "handlers": [
+        "orders"
+      ]
+    },
+    {
+      "raw": "/api/orders?size=50&sort=orderedAt,desc",
+      "normalized": "/api/orders",
+      "handlers": [
+        "orders"
+      ]
+    },
+    {
+      "raw": "/api/points/balance",
+      "normalized": "/api/points/balance",
+      "handlers": [
+        "points"
+      ]
+    },
+    {
+      "raw": "/api/policies/public/current",
+      "normalized": "/api/policies/public/current",
+      "handlers": [
+        "policies-public"
+      ]
+    },
+    {
+      "raw": "/api/public/auth/register",
+      "normalized": "/api/public/auth/register",
+      "handlers": [
+        "register"
+      ]
+    },
+    {
+      "raw": "/api/public/categories",
+      "normalized": "/api/public/categories",
+      "handlers": [
+        "categories-public"
+      ]
+    },
+    {
+      "raw": "/api/public/dev-login",
+      "normalized": "/api/public/dev-login",
+      "handlers": [
+        "dev-login-block"
+      ]
+    },
+    {
+      "raw": "/api/public/home-products",
+      "normalized": "/api/public/home-products",
+      "handlers": [
+        "home-products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/identity/pass/${encodeURIComponent(state.passSessionId)}",
+      "normalized": "/api/public/identity/pass/:dynamic",
+      "handlers": [
+        "identity-public"
+      ]
+    },
+    {
+      "raw": "/api/public/identity/pass/local-complete",
+      "normalized": "/api/public/identity/pass/local-complete",
+      "handlers": [
+        "identity-public"
+      ]
+    },
+    {
+      "raw": "/api/public/identity/pass/start",
+      "normalized": "/api/public/identity/pass/start",
+      "handlers": [
+        "identity-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products/${item.productId}",
+      "normalized": "/api/public/products/:dynamic",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products/${productId}",
+      "normalized": "/api/public/products/:dynamic",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products/${productId}/questions?size=100",
+      "normalized": "/api/public/products/:dynamic/questions",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products/${productId}/reviews?size=50",
+      "normalized": "/api/public/products/:dynamic/reviews",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products?keyword=${encodeURIComponent(normalizedInput)}&size=100&sort=RECOMMENDED",
+      "normalized": "/api/public/products",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products?size=100&sort=RECOMMENDED",
+      "normalized": "/api/public/products",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products?status=ON_SALE&size=1",
+      "normalized": "/api/public/products",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products?status=ON_SALE&size=200",
+      "normalized": "/api/public/products",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/products?status=ON_SALE&size=200&sort=RECOMMENDED",
+      "normalized": "/api/public/products",
+      "handlers": [
+        "products-public"
+      ]
+    },
+    {
+      "raw": "/api/public/promotions/banners?placement=HOME_HERO",
+      "normalized": "/api/public/promotions/banners",
+      "handlers": [
+        "banners-public"
+      ]
+    },
+    {
+      "raw": "/api/public/reviews?size=100",
+      "normalized": "/api/public/reviews",
+      "handlers": [
+        "reviews-public"
+      ]
+    },
+    {
+      "raw": "/api/public/search/click?q=${encodeURIComponent(normalizedInput)}",
+      "normalized": "/api/public/search/click",
+      "handlers": [
+        "search-public"
+      ]
+    },
+    {
+      "raw": "/api/public/search/guide?q=${encodeURIComponent(normalizedInput)}",
+      "normalized": "/api/public/search/guide",
+      "handlers": [
+        "search-public"
+      ]
+    },
+    {
+      "raw": "/api/public/search/guide?q=${encodeURIComponent(query)}",
+      "normalized": "/api/public/search/guide",
+      "handlers": [
+        "search-public"
+      ]
+    },
+    {
+      "raw": "/api/public/search/popular",
+      "normalized": "/api/public/search/popular",
+      "handlers": [
+        "search-public"
+      ]
+    },
+    {
+      "raw": "/api/public/search/suggestions?q=",
+      "normalized": "/api/public/search/suggestions",
+      "handlers": [
+        "search-public"
+      ]
+    },
+    {
+      "raw": "/api/public/seller-applications",
+      "normalized": "/api/public/seller-applications",
+      "handlers": [
+        "seller-application-public"
+      ]
+    },
+    {
+      "raw": "/api/public/seller-applications/${encodeURIComponent(number)}/status?applicantEmail=${encodeURIComponent(email)}",
+      "normalized": "/api/public/seller-applications/:dynamic/status",
+      "handlers": [
+        "seller-application-public"
+      ]
+    },
+    {
+      "raw": "/api/public/seller-applications/verify-business",
+      "normalized": "/api/public/seller-applications/verify-business",
+      "handlers": [
+        "seller-application-public"
+      ]
+    },
+    {
+      "raw": "/api/public/statistics/impressions",
+      "normalized": "/api/public/statistics/impressions",
+      "handlers": [
+        "statistics-public"
+      ]
+    },
+    {
+      "raw": "/api/questions/products/${productId}",
+      "normalized": "/api/questions/products/:dynamic",
+      "handlers": [
+        "questions"
+      ]
+    },
+    {
+      "raw": "/api/reviews",
+      "normalized": "/api/reviews",
+      "handlers": [
+        "reviews-me"
+      ]
+    },
+    {
+      "raw": "/api/seller/alerts/realtime",
+      "normalized": "/api/seller/alerts/realtime",
+      "handlers": [
+        "seller-alerts"
+      ]
+    },
+    {
+      "raw": "/api/seller/claims/${id}/${action}",
+      "normalized": "/api/seller/claims/:dynamic/:dynamic",
+      "handlers": [
+        "seller-claims"
+      ]
+    },
+    {
+      "raw": "/api/seller/claims/${id}/complete-return?resalable=${confirm(",
+      "normalized": "/api/seller/claims/:dynamic/complete-return",
+      "handlers": [
+        "seller-claims"
+      ]
+    },
+    {
+      "raw": "/api/seller/claims/${id}/received",
+      "normalized": "/api/seller/claims/:dynamic/received",
+      "handlers": [
+        "seller-claims"
+      ]
+    },
+    {
+      "raw": "/api/seller/claims/${id}/replacement?resalable=${confirm(",
+      "normalized": "/api/seller/claims/:dynamic/replacement",
+      "handlers": [
+        "seller-claims"
+      ]
+    },
+    {
+      "raw": "/api/seller/claims?size=100${status",
+      "normalized": "/api/seller/claims",
+      "handlers": [
+        "seller-claims"
+      ]
+    },
+    {
+      "raw": "/api/seller/coupons",
+      "normalized": "/api/seller/coupons",
+      "handlers": [
+        "seller-coupons"
+      ]
+    },
+    {
+      "raw": "/api/seller/coupons/${button.dataset.couponId}/status?status=${encodeURIComponent(button.dataset.couponStatus)}",
+      "normalized": "/api/seller/coupons/:dynamic/status",
+      "handlers": [
+        "seller-coupons"
+      ]
+    },
+    {
+      "raw": "/api/seller/coupons/${couponId}/issues",
+      "normalized": "/api/seller/coupons/:dynamic/issues",
+      "handlers": [
+        "seller-coupons"
+      ]
+    },
+    {
+      "raw": "/api/seller/inventory/bulk",
+      "normalized": "/api/seller/inventory/bulk",
+      "handlers": [
+        "seller-inventory"
+      ]
+    },
+    {
+      "raw": "/api/seller/inventory/bulk/preview",
+      "normalized": "/api/seller/inventory/bulk/preview",
+      "handlers": [
+        "seller-inventory"
+      ]
+    },
+    {
+      "raw": "/api/seller/inventory/bulk/template",
+      "normalized": "/api/seller/inventory/bulk/template",
+      "handlers": [
+        "seller-inventory"
+      ]
+    },
+    {
+      "raw": "/api/seller/inventory/bulk/template/info",
+      "normalized": "/api/seller/inventory/bulk/template/info",
+      "handlers": [
+        "seller-inventory"
+      ]
+    },
+    {
+      "raw": "/api/seller/marketing/messages",
+      "normalized": "/api/seller/marketing/messages",
+      "handlers": [
+        "seller-marketing"
+      ]
+    },
+    {
+      "raw": "/api/seller/operations/checklist",
+      "normalized": "/api/seller/operations/checklist",
+      "handlers": [
+        "seller-checklist"
+      ]
+    },
+    {
+      "raw": "/api/seller/operations/readiness",
+      "normalized": "/api/seller/operations/readiness",
+      "handlers": [
+        "seller-checklist"
+      ]
+    },
+    {
+      "raw": "/api/seller/orders?size=200",
+      "normalized": "/api/seller/orders",
+      "handlers": [
+        "seller-orders"
+      ]
+    },
+    {
+      "raw": "/api/seller/products",
+      "normalized": "/api/seller/products",
+      "handlers": [
+        "seller-products"
+      ]
+    },
+    {
+      "raw": "/api/seller/products/${editId}",
+      "normalized": "/api/seller/products/:dynamic",
+      "handlers": [
+        "seller-products"
+      ]
+    },
+    {
+      "raw": "/api/seller/products/${productId}",
+      "normalized": "/api/seller/products/:dynamic",
+      "handlers": [
+        "seller-products"
+      ]
+    },
+    {
+      "raw": "/api/seller/products/${productId}/discontinue",
+      "normalized": "/api/seller/products/:dynamic/discontinue",
+      "handlers": [
+        "seller-products"
+      ]
+    },
+    {
+      "raw": "/api/seller/products/${saved.id}/submit",
+      "normalized": "/api/seller/products/:dynamic/submit",
+      "handlers": [
+        "seller-products"
+      ]
+    },
+    {
+      "raw": "/api/seller/products/${summary.id}",
+      "normalized": "/api/seller/products/:dynamic",
+      "handlers": [
+        "seller-products"
+      ]
+    },
+    {
+      "raw": "/api/seller/products?size=100",
+      "normalized": "/api/seller/products",
+      "handlers": [
+        "seller-products"
+      ]
+    },
+    {
+      "raw": "/api/seller/products?size=200",
+      "normalized": "/api/seller/products",
+      "handlers": [
+        "seller-products"
+      ]
+    },
+    {
+      "raw": "/api/seller/questions/${questionId}/answer",
+      "normalized": "/api/seller/questions/:dynamic/answer",
+      "handlers": [
+        "seller-questions"
+      ]
+    },
+    {
+      "raw": "/api/seller/questions?size=50${status",
+      "normalized": "/api/seller/questions",
+      "handlers": [
+        "seller-questions"
+      ]
+    },
+    {
+      "raw": "/api/seller/settlement-account",
+      "normalized": "/api/seller/settlement-account",
+      "handlers": [
+        "seller-settlement-account"
+      ]
+    },
+    {
+      "raw": "/api/seller/settlements",
+      "normalized": "/api/seller/settlements",
+      "handlers": [
+        "seller-settlements"
+      ]
+    },
+    {
+      "raw": "/api/seller/settlements?size=50&sort=createdAt,desc",
+      "normalized": "/api/seller/settlements",
+      "handlers": [
+        "seller-settlements"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/${encodeURIComponent(String(id))}/prepare",
+      "normalized": "/api/seller/shipments/:dynamic/prepare",
+      "handlers": [
+        "seller-shipments-action"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/${encodeURIComponent(id)}/${target===",
+      "normalized": "/api/seller/shipments/:dynamic/:dynamic",
+      "handlers": [
+        "seller-shipments-action"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/${encodeURIComponent(id)}/dispatch",
+      "normalized": "/api/seller/shipments/:dynamic/dispatch",
+      "handlers": [
+        "seller-shipments-action"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/${encodeURIComponent(id)}/label",
+      "normalized": "/api/seller/shipments/:dynamic/label",
+      "handlers": [
+        "seller-shipments-action"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/${encodeURIComponent(id)}/prepare",
+      "normalized": "/api/seller/shipments/:dynamic/prepare",
+      "handlers": [
+        "seller-shipments-action"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/${id}/dispatch",
+      "normalized": "/api/seller/shipments/:dynamic/dispatch",
+      "handlers": [
+        "seller-shipments-action"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/${id}/prepare",
+      "normalized": "/api/seller/shipments/:dynamic/prepare",
+      "handlers": [
+        "seller-shipments-action"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/batch/dispatch",
+      "normalized": "/api/seller/shipments/batch/dispatch",
+      "handlers": [
+        "seller-shipments-action",
+        "seller-shipments-batch"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/batch/prepare",
+      "normalized": "/api/seller/shipments/batch/prepare",
+      "handlers": [
+        "seller-shipments-action",
+        "seller-shipments-batch"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments/carrier-request.csv",
+      "normalized": "/api/seller/shipments/carrier-request.csv",
+      "handlers": [
+        "seller-carrier-csv"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments?size=100",
+      "normalized": "/api/seller/shipments",
+      "handlers": [
+        "seller-shipments-list"
+      ]
+    },
+    {
+      "raw": "/api/seller/shipments?size=100&sort=createdAt,desc",
+      "normalized": "/api/seller/shipments",
+      "handlers": [
+        "seller-shipments-list"
+      ]
+    },
+    {
+      "raw": "/api/seller/statistics?period=${encodeURIComponent(value(",
+      "normalized": "/api/seller/statistics",
+      "handlers": [
+        "seller-stats"
+      ]
+    },
+    {
+      "raw": "/api/seller/statistics?period=MONTH",
+      "normalized": "/api/seller/statistics",
+      "handlers": [
+        "seller-stats"
+      ]
+    }
+  ]
+}

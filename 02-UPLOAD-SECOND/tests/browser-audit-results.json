@@ -1,0 +1,98 @@
+{
+  "viewports": {
+    "390": {
+      "bannerCount": 3,
+      "initialCounter": "1 / 3",
+      "afterCounter": "2 / 3",
+      "autoplayMoved": true,
+      "autoplayStatus": "running",
+      "firstBannerSrc": "./assets/banners/home-hero-01.webp",
+      "fruitIconCount": 22,
+      "fruitIconFileCount": 22,
+      "unitNumberAbsent": true,
+      "appReady": "true",
+      "part46Ready": "ready",
+      "part46Panels": {
+        "fm46-seller-fresh-center": 1,
+        "fm46-buyer-disputes": 1,
+        "fm46-admin-marketplace-center": 1,
+        "fm46-checkout-notice": 1,
+        "fm46-platform-footer": 1
+      },
+      "part46UiAudit": {
+        "version": "46.0.0",
+        "duplicateIds": [],
+        "buttonCount": 253,
+        "viewportWidth": 390,
+        "overflowX": 0,
+        "checkedAt": "2026-08-05T23:36:03.486Z"
+      },
+      "part48Ready": "ready",
+      "part48Panels": {
+        "fm48-buyer-protection": 1,
+        "fm48-seller-protection": 1,
+        "fm48-admin-protection": 1
+      },
+      "part48Audit": {
+        "version": "48.0.0",
+        "buyerPanel": true,
+        "sellerPanel": true,
+        "adminPanel": true,
+        "duplicateIds": [],
+        "overflowX": 0,
+        "checkedAt": "2026-08-05T23:36:03.486Z"
+      },
+      "overflow": 0,
+      "errors": [],
+      "failedRequests": []
+    },
+    "1365": {
+      "bannerCount": 3,
+      "initialCounter": "1 / 3",
+      "afterCounter": "2 / 3",
+      "autoplayMoved": true,
+      "autoplayStatus": "running",
+      "firstBannerSrc": "./assets/banners/home-hero-01.webp",
+      "fruitIconCount": 22,
+      "fruitIconFileCount": 22,
+      "unitNumberAbsent": true,
+      "appReady": "true",
+      "part46Ready": "ready",
+      "part46Panels": {
+        "fm46-seller-fresh-center": 1,
+        "fm46-buyer-disputes": 1,
+        "fm46-admin-marketplace-center": 1,
+        "fm46-checkout-notice": 1,
+        "fm46-platform-footer": 1
+      },
+      "part46UiAudit": {
+        "version": "46.0.0",
+        "duplicateIds": [],
+        "buttonCount": 253,
+        "viewportWidth": 1365,
+        "overflowX": 0,
+        "checkedAt": "2026-08-05T23:36:09.285Z"
+      },
+      "part48Ready": "ready",
+      "part48Panels": {
+        "fm48-buyer-protection": 1,
+        "fm48-seller-protection": 1,
+        "fm48-admin-protection": 1
+      },
+      "part48Audit": {
+        "version": "48.0.0",
+        "buyerPanel": true,
+        "sellerPanel": true,
+        "adminPanel": true,
+        "duplicateIds": [],
+        "overflowX": 0,
+        "checkedAt": "2026-08-05T23:36:09.285Z"
+      },
+      "overflow": 0,
+      "errors": [],
+      "failedRequests": []
+    }
+  },
+  "testMode": "page.set_content with CSP meta removed only because the execution environment blocks localhost; CSP hash completeness is tested separately",
+  "passed": true
+}
