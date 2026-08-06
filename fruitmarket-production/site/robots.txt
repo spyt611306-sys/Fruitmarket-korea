@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fruit-market.netlify.app/sitemap.xml
