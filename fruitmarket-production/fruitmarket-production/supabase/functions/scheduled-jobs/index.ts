@@ -1,1 +1,0 @@
-import{json,preflight,constantTimeEqual}from"../_shared/http.ts";Deno.serve((req)=>{const p=preflight(req);if(p)return p;const a=Deno.env.get("FRUITMARKET_CRON_SECRET")||"",b=req.headers.get("x-cron-secret")||"";if(!a||!constantTimeEqual(a,b))return json({code:"CRON_UNAUTHORIZED"},401);return json({status:"ok",executedAt:new Date().toISOString(),jobs:[]});});

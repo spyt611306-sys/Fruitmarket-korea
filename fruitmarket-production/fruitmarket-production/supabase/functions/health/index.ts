@@ -1,1 +1,0 @@
-import{json,preflight}from"../_shared/http.ts";Deno.serve((req)=>{const p=preflight(req);if(p)return p;return json({status:"ok",service:"fruitmarket",version:"48.0.1-continuation",checkedAt:new Date().toISOString()});});
